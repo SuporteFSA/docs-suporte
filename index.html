@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="topo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte Docs</title>
+    <!--BOOTSTRAP *BOOTSTRAP@5.3.6*-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--CSS EXTERNO-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body >
+
+    <!--CABEÇALHO POSIÇÃO FIXA-->
+    <header class="d-flex align-items-center justify-content-around" >
+        <div class="logo">
+            <a href="index.html"><img src="assets/img/suporte-logo.png" alt="suporte-logo" width="40"></a>
+            <span><strong>Suporte FSA</strong></span>
+        </div>
+        <a href="https://github.com/SuporteFSA" target="_blank" style="text-decoration: none; color: #000;">
+            <img src="assets/img/github-logo.png" alt="github-logo" width="30">
+            <span><small><strong>GithubFSA</strong></small></span>
+        </a>
+    </header>
+    <!--FIM CABEÇALHO-->
+
+    <div class="container" style="margin-top: 150px;">
+
+        
+        <div class="row">
+            <aside class="col-md-4 col-lg-3 menu-lateral">
+
+              <h2>Documentações</h2>
+                <!-- 
+                <ul>
+                    <h5>Resete de senha</h5>
+                    <li><a href=""></a></li>
+                    <li><a href="">Portal do Aluno/Professor</a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul> -->
+
+                <div class="dropdown" style="cursor: pointer;">
+                    <div class="dropdown-toggle h6 bg-light" data-bs-toggle="dropdown" aria-expanded="false">
+                        Resete de senha
+                    </div>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#moodle"><strong>Moodle-Wi-Fi-Laboratório</strong>/Professores/Alunos</a></li>
+                      <li><a class="dropdown-item" href="#"><strong>Portal do Aluno</strong></a></li>
+                      <li><a class="dropdown-item" href="#"><strong>Gmail</strong>/Alunos/Professores/Funcionários</a></li>
+                      <li><a class="dropdown-item" href="#"><strong>Office365</strong>/Alunos/Professores/Funcionários</a></li>
+                      <li><a class="dropdown-item" href="#"><strong>Portal do Professor/Funcionário</strong></a></li>
+                    </ul>
+                </div>
+  
+            </aside>
+
+
+            <div class="col-md-8 col-lg-9" style="border-left: 1px solid #eee;" >
+                <h4>Reste de Senha</h4>
+                <h6 id="moodle"style="margin-bottom: 30px;">Moodle-Wi-Fi-Laboratório</h6>
+                <p>Para redefinir a senha da plataforma Moodle, Wi-Fi e da rede dos computadores dos labarotórios de informática para alunos, professores e funcionários é necessário acessar o servidor unilab.</p>
+
+                <p>Ao alterar a senha do usuário no servidor as três senhas serão redefinidas, pois estão atreladas ao unilab.</p>
+
+                <p>Dentro do servirdor no menu do Windows clique em <strong>ferramentas administrativas</strong> > <strong>Usuários e Computadores do Active Directory</strong> clique no ícone Localizar usuários <span><img src="assets/img/tuto-res-moodle/icon-localizar objetos.png" width="30" alt="localizar objetos"></span></p>
+
+                <p>Certifique-se que o campo <strong>"Localizar"</strong> está a opção <em>Usuários, Contatos e Grupos</em> e a opção <strong>"em"</strong> está <em>unilab.fsa.br</em></p>
+
+                <img src="assets/img/tuto-res-moodle/print-pesquisa-unilab.jpg" width="400" alt="">
+                <p><small><strong>Digite o nome completo do usuário ou RA e clique em Localiza Agora</strong></small></p>
+
+                <img src="assets/img/tuto-res-moodle/print-pesquisar-usuario-unilab.jpg" width="400" alt="">
+                <p>Ao localizar o usário clique com o botão direito sobre o usuário para e vá na opção redefinir senha</p>
+
+                <img src="assets/img/tuto-res-moodle/print-redefinir-senha-unilab.jpg" width="400" alt="">
+                <p>Senha padrão é o CPF do usuário somente números, digite e confirme a senha. Certifique-se de habilitar a opção <em>Desbloquear a conta do usuário</em>  e clique em OK</p>
+
+                <img src="assets/img/tuto-res-moodle/print-senha-alterada-com-sucesso.jpg" alt="">
+
+                <hr>
+                
+            </div>
+        </div>
+
+        
+    </div>
+
+    <a class="topo" href="#topo"><strong>Topo</strong></a>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+   
+</body>
+</html>
