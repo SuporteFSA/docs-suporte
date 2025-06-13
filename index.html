@@ -27,23 +27,20 @@
 
     <div class="container" style="margin-top: 150px;">
 
-        
         <div class="row">
             <aside class="col-md-4 col-lg-3 menu-lateral">
 
-              <h2>Documentações</h2>
-    
-
+                <h2>Documentações</h2>
                 <div class="dropdown" style="cursor: pointer;">
                     <div class="dropdown-toggle h6 bg-light" data-bs-toggle="dropdown" aria-expanded="false">
                         Resete de senha
                     </div>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#moodle"><strong>Moodle-Wi-Fi-Laboratório</strong>/Professores/Alunos/Funcionários</a></li>
-                      <li><a class="dropdown-item" href="#portal-do-aluno"><strong>Portal do Aluno</strong></a></li>
-                      <li><a class="dropdown-item" href="#"><strong>Gmail</strong>/Alunos/Professores/Funcionários</a></li>
-                      <li><a class="dropdown-item" href="#"><strong>Office365</strong>/Alunos/Professores/Funcionários</a></li>
-                      <li><a class="dropdown-item" href="#"><strong>Portal do Professor/Funcionário</strong></a></li>
+                      <li><a class="dropdown-item" id="senha-moodle" href="#senha-moodle"><strong>Moodle-Wi-Fi-Laboratório</strong>/Professores/Alunos/Funcionários</a></li>
+                      <li><a class="dropdown-item" id="portal-senha" href="#"><strong>Portal do Aluno</strong></a></li>
+                      <li><a class="dropdown-item" id="gmail-senha" href="#"><strong>Gmail</strong>/Alunos/Professores/Funcionários</a></li>
+                      <li><a class="dropdown-item" id="office-senha" href="#"><strong>Office365</strong>/Alunos/Professores/Funcionários</a></li>
+                      <li><a class="dropdown-item" id="portal-senha-funcionario" href="#"><strong>Portal do Professor/Funcionário</strong></a></li>
                     </ul>
                 </div>
   
@@ -51,34 +48,37 @@
 
 
             <div class="col-md-8 col-lg-9" style="border-left: 1px solid #eee;" >
-                <!--RESETE MOODLE-WI-FI E LABORATÓRIOS-->
-                <h4>Resete de Senha</h4>
-                <h6 class="margin-bottom-title" id="moodle">Moodle-Wi-Fi-Laboratório para alunos, professores e funcionários</h6>
-                <p>Para redefinir a senha da plataforma Moodle, Wi-Fi e da rede dos computadores dos labarotórios de informática para alunos, professores e funcionários é necessário acessar o servidor unilab.</p>
+                <div id="senha-moodle" class="fff">
+                    <!--RESETE MOODLE-WI-FI E LABORATÓRIOS-->
+                    <h4>Resete de Senha</h4>
+                    <h6 class="margin-bottom-title" id="moodle">Moodle-Wi-Fi-Laboratório para alunos, professores e funcionários</h6>
+                    <p>Para redefinir a senha da plataforma Moodle, Wi-Fi e da rede dos computadores dos labarotórios de informática para alunos, professores e funcionários é necessário acessar o servidor unilab.</p>
 
-                <p>Ao alterar a senha do usuário no servidor as três senhas serão redefinidas, pois estão atreladas ao unilab.</p>
+                    <p>Ao alterar a senha do usuário no servidor as três senhas serão redefinidas, pois estão atreladas ao unilab.</p>
 
-                <p>Dentro do servirdor no menu do Windows clique em <strong>ferramentas administrativas</strong> > <strong>Usuários e Computadores do Active Directory</strong> clique no ícone Localizar usuários <span><img src="assets/img/tuto-res-moodle/icon-localizar objetos.png" width="30" alt="localizar objetos"></span></p>
+                    <p>Dentro do servirdor no menu do Windows clique em <strong>ferramentas administrativas</strong> > <strong>Usuários e Computadores do Active Directory</strong> clique no ícone Localizar usuários <span><img src="assets/img/tuto-res-moodle/icon-localizar objetos.png" width="30" alt="localizar objetos"></span></p>
 
-                <p>Certifique-se que o campo <strong>"Localizar"</strong> está a opção <em>Usuários, Contatos e Grupos</em> e a opção <strong>"em"</strong> está <em>unilab.fsa.br</em></p>
+                    <p>Certifique-se que o campo <strong>"Localizar"</strong> está a opção <em>Usuários, Contatos e Grupos</em> e a opção <strong>"em"</strong> está <em>unilab.fsa.br</em></p>
 
-                <img src="assets/img/tuto-res-moodle/print-pesquisa-unilab.jpg" width="400" alt="">
-                <p><small><strong>Digite o nome completo do usuário ou RA e clique em Localiza Agora</strong></small></p>
+                    <img src="assets/img/tuto-res-moodle/print-pesquisa-unilab.jpg" width="400" alt="">
+                    <p><small><strong>Digite o nome completo do usuário ou RA e clique em Localiza Agora</strong></small></p>
 
-                <img src="assets/img/tuto-res-moodle/print-pesquisar-usuario-unilab.jpg" width="400" alt="">
-                <p>Ao localizar o usuário clique com o botão direito sobre o usuário e clique na opção redefinir senha</p>
+                    <img src="assets/img/tuto-res-moodle/print-pesquisar-usuario-unilab.jpg" width="400" alt="">
+                    <p>Ao localizar o usuário clique com o botão direito sobre o usuário e clique na opção redefinir senha</p>
 
-                <img src="assets/img/tuto-res-moodle/print-redefinir-senha-unilab.jpg" width="400" alt="">
-                <p>Senha padrão é o CPF do usuário somente números, digite e confirme a senha. Certifique-se de habilitar a opção <em>Desbloquear a conta do usuário</em>  e clique em OK</p>
+                    <img src="assets/img/tuto-res-moodle/print-redefinir-senha-unilab.jpg" width="400" alt="">
+                    <p>Senha padrão é o CPF do usuário somente números, digite e confirme a senha. Certifique-se de habilitar a opção <em>Desbloquear a conta do usuário</em>  e clique em OK</p>
 
-                <h5 class="margin-top-title">Video demonstração alteração de senha Moodle no servidor unilab</h5>
-                <iframe src="https://www.youtube.com/embed/pz9iGz4-sCs?si=dNxZmWmoJmGeDsD2" title="YouTube video player" allowfullscreen style="width: 100%; height: 400px;">
-                </iframe>
+                    <h5 class="margin-top-title">Video demonstração alteração de senha Moodle no servidor unilab</h5>
+                    <iframe src="https://www.youtube.com/embed/pz9iGz4-sCs?si=dNxZmWmoJmGeDsD2" title="YouTube video player" allowfullscreen style="width: 100%; height: 400px;">
+                    </iframe>
+                </div>
+                
                 
                 <!--FIM RESETE MOODLE-WI-FI E LABORATÓRIOS-->
 
                 <!--RESETE PORTAL DO ALUNO-->
-            <!--    <h4 class="margin-top-title">Resete de Senha</h4>
+                <!--<h4 class="margin-top-title">Resete de Senha</h4>
                 <h6 class="margin-bottom-title" id="portal-do-aluno">Portal do Aluno</h6>
 
                 <p>Para alterar a senha do portal do aluno é necessário acessar o servidor TOTVS, acessar o ambiente educacional para pesquisar o aluno por RA, nome completo ou CPF.</p> -->
@@ -87,8 +87,11 @@
         </div>
     </div>
 
-    <a class="topo" href="#topo"><strong>Topo</strong></a>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script> 
+    <a class="topo" href="#topo"><img src="assets/icon/arrow-up-short.svg" alt="" width="30px"></a>
+
+    <script src="assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script> 
+    
   <!--  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>-->
    
 </body>
