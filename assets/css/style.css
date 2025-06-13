@@ -36,3 +36,11 @@ a.topo{
     padding: 15px;
     cursor: pointer;
 }
+
+.margin-bottom-title{
+    margin-bottom: 30px;
+}
+
+.margin-top-title{
+    margin-top: 30px;
+}
