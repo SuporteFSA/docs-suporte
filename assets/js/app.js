@@ -4,7 +4,7 @@ let divs = document.querySelectorAll('div')
 
 
 var getId = function getId(elementIdButton){
-    console.log(elementIdButton)
+    
     divs.forEach(divs => 
         {
             let div = divs
