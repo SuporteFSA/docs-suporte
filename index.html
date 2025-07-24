@@ -32,7 +32,7 @@
 
                 <h2>Documentações</h2>
                 <div class="dropdown" style="cursor: pointer;">
-                    <div class="dropdown-toggle h6 bg-light" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="dropdown-toggle h6 bg-primary p-4 text-white" data-bs-toggle="dropdown" aria-expanded="false">
                         Resete de senha
                     </div>
                     <ul class="dropdown-menu">
@@ -43,6 +43,18 @@
                       <li><a class="dropdown-item" id="portal-senha-funcionario" href="#"><strong>Portal do Professor/Funcionário</strong></a></li>
                     </ul>
                 </div>
+                <div class="dropdown" style="cursor: pointer;">
+                    <div class="dropdown-toggle h6 bg-primary p-4 text-white" data-bs-toggle="dropdown" aria-expanded="false">
+                        Criação de Usuário
+                    </div>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" id="func-n-aluno" href="#"><strong>Funcionário não aluno</strong></a></li>
+                      <li><a class="dropdown-item" id="func-a" href="#"><strong>Funcionário Aluno</strong></a></li>
+                      <li><a class="dropdown-item" id="prof" href="#"><strong>Professor</strong></a></li>
+                      <li><a class="dropdown-item" id="frela" href="#"><strong>Frelancer</strong></a></li>
+                      <li><a class="dropdown-item" id="estagio" href="#"><strong>Estagiário</strong></a></li>
+                    </ul>
+                </div>
   
             </aside>
 
@@ -50,23 +62,23 @@
             <div class="col-md-8 col-lg-9" style="border-left: 1px solid #eee;" >
                 <div id="senha-moodle">
                     <!--RESETE MOODLE-WI-FI E LABORATÓRIOS-->
-                    <h4>Resete de Senha</h4>
+                    <h3>Resete de Senha</h3>
                     <h6 id="moodle">Moodle-Wi-Fi-Laboratório para alunos, professores e funcionários</h6>
                     <p>Para redefinir a senha da plataforma Moodle, Wi-Fi e da rede dos computadores dos labarotórios de informática para alunos, professores e funcionários é necessário acessar o servidor unilab.</p>
 
                     <p>Ao alterar a senha do usuário no servidor as três senhas serão redefinidas, pois estão atreladas ao unilab.</p>
 
-                    <p>Dentro do servirdor no menu do Windows clique em <strong>ferramentas administrativas</strong> > <strong>Usuários e Computadores do Active Directory</strong> clique no ícone Localizar usuários <span><img src="assets/img/tuto-res-moodle/icon-localizar objetos.png" width="30" alt="localizar objetos"></span></p>
+                    <p>Dentro do servirdor no menu do Windows clique em <strong>ferramentas administrativas</strong> > <strong>Usuários e Computadores do Active Directory</strong> clique no ícone Localizar usuários <span><img class="img-fluid" src="assets/img/tuto-res-moodle/icon-localizar objetos.png" width="30" alt="localizar objetos"></span></p>
 
                     <p>Certifique-se que o campo <strong>"Localizar"</strong> está a opção <em>Usuários, Contatos e Grupos</em> e a opção <strong>"em"</strong> está <em>unilab.fsa.br</em></p>
 
-                    <img src="assets/img/tuto-res-moodle/print-pesquisa-unilab.jpg" width="400" alt="">
+                    <img class="img-fluid" src="assets/img/tuto-res-moodle/print-pesquisa-unilab.jpg" width="400" alt="">
                     <p><small><strong>Digite o nome completo do usuário ou RA e clique em Localiza Agora</strong></small></p>
 
-                    <img src="assets/img/tuto-res-moodle/print-pesquisar-usuario-unilab.jpg" width="400" alt="">
+                    <img class="img-fluid" src="assets/img/tuto-res-moodle/print-pesquisar-usuario-unilab.jpg" width="400" alt="">
                     <p>Ao localizar o usuário clique com o botão direito sobre o usuário e clique na opção redefinir senha</p>
 
-                    <img src="assets/img/tuto-res-moodle/print-redefinir-senha-unilab.jpg" width="400" alt="">
+                    <img class="img-fluid" src="assets/img/tuto-res-moodle/print-redefinir-senha-unilab.jpg" width="400" alt="">
                     <p>Senha padrão é o CPF do usuário somente números, digite e confirme a senha. Certifique-se de habilitar a opção <em>Desbloquear a conta do usuário</em>  e clique em OK</p>
 
                     <h5 class="margin-top-title">Video demonstração alteração de senha Moodle no servidor unilab</h5>
@@ -75,20 +87,32 @@
                 </div>
                 <!--FIM RESETE MOODLE-WI-FI E LABORATÓRIOS-->
     
-                <!--RESETE PORTAL DO ALUNO-->
-             <!--   <div id="senha-portal">
-                    <h4>Resete de Senha</h4>
-                    <h6 id="portal-do-aluno">Portal do Aluno</h6>
-
-                    <p>Para alterar a senha do portal do aluno é necessário acessar o servidor TOTVS, acessar o ambiente educacional para pesquisar o aluno por RA, nome completo ou CPF.</p>
-                </div> -->
+                <div id="prof">
+                    <h3 class="my-4">Criação de usuário professor</h3>
+                    <p class="h5">Passo 1: Criar e-mail Institucional</p>
+                    <p>Acesse o adminstrador do gmail no canto esquerdo clique em <strong>diretórios</strong> e usuários e <em class="bg-primary p-1 text-white">Adicionar Novo Usuário</em> </p>
+                    <p>Preencha os campos <em>Infomações do Usuário</em></p>
+                    <img class="my-4 img-fluid" src="assets/img/criacao-professor/inf-usuario-gmail.PNG" alt="">
+                    <p>Insira Nome, Sobrenome. No campo <em class="bg-primary text-white p-1">E-mail principal</em> digite o nome de usuário <strong> nome.sobrenome</strong> do usuário</p>
+                    <p>Em Unidade organizacional clique na opção <em>professores</em></p>
+                    <p>E insira a senha padrão para email institucional</p>
+                    <p class="h6">OBS.: Após a criação do email é necessário inserir no grupo professores</p>
+                    <p>Vá na aba Grupos clique em adicionar o usuário a grupos e na barra de pesquisa digite professores e selecione <em class="bg-light p-1">professores@fsa.br</em></p>
+                    <img class="my-4 img-fluid" src="assets/img/criacao-professor/grupo-professores-gmail.PNG" alt="">
+                    <h3 class="my-4">Passo 2: Criar usuário no Totvs</h3>
+                    <p>No Totvs vá no menu no canto superior direito, clique em <strong>serviços globais</strong> e clique na aba <em>Segurança</em> e clique no ícone Usuários</p>
+                    <img class="my-4 img-fluid" src="assets/img/criacao-professor/tovts-servicos-globais-caminho.png" alt="">
+                    <p>Após abrir o filtro abaixo, conforme mostra a imagem, clique em fechar</p>
+                    <img class="my-4 img-fluid" src="assets/img/criacao-professor/filtro-servicos-globais.png" alt="">
+                
+                </div>
   
                 
             </div>
         </div>
     </div>
 
-    <a class="topo" href="#topo"><img src="assets/icon/arrow-up-short.svg" alt="" width="30px"></a>
+    <a class="topo bg-primary" href="#topo"><img src="assets/icon/arrow-up-short.svg" alt="" width="30px"></a>
 
     <script src="assets/js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script> 
