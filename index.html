@@ -48,7 +48,7 @@
                         Criação de Usuário
                     </div>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" id="func-n-aluno" href="#"><strong>Funcionário não aluno</strong></a></li>
+                      <li><a class="dropdown-item" id="func-n-aluno" href="#"><strong>Funcionário Não Aluno/Aprendiz</strong></a></li>
                       <li><a class="dropdown-item" id="func-a" href="#"><strong>Funcionário Aluno</strong></a></li>
                       <li><a class="dropdown-item" id="prof" href="#"><strong>Professor</strong></a></li>
                       <li><a class="dropdown-item" id="frela" href="#"><strong>Frelancer</strong></a></li>
@@ -86,14 +86,16 @@
                     </iframe>
                 </div>
                 <!--FIM RESETE MOODLE-WI-FI E LABORATÓRIOS-->
-    
-                <div id="prof">
+                
+                <!--CRIAÇÃO USUÁRIO PROFESSOR-->
+                <div class="oculta" id="prof">
                     <h3 class="my-4">Criação de usuário professor</h3>
                     <p class="h5">Passo 1: Criar e-mail Institucional</p>
                     <p>Acesse o adminstrador do gmail no canto esquerdo clique em <strong>diretórios</strong> e usuários e <em class="bg-primary p-1 text-white">Adicionar Novo Usuário</em> </p>
                     <p>Preencha os campos <em>Infomações do Usuário</em></p>
                     <img class="my-4 img-fluid" src="assets/img/criacao-professor/inf-usuario-gmail.PNG" alt="">
                     <p>Insira Nome, Sobrenome. No campo <em class="bg-primary text-white p-1">E-mail principal</em> digite o nome de usuário <strong> nome.sobrenome</strong> do usuário</p>
+                    <p><strong>OBS.: Caso o nome.sobrenome já esxita tente trocar por outro sobrenome do usuário</strong></p>
                     <p>Em Unidade organizacional clique na opção <em>professores</em></p>
                     <p>E insira a senha padrão para email institucional</p>
                     <p class="h6">OBS.: Após a criação do email é necessário inserir no grupo professores</p>
@@ -104,13 +106,150 @@
                     <img class="my-4 img-fluid" src="assets/img/criacao-professor/tovts-servicos-globais-caminho.png" alt="">
                     <p>Após abrir o filtro abaixo, conforme mostra a imagem, clique em fechar</p>
                     <img class="my-4 img-fluid" src="assets/img/criacao-professor/filtro-servicos-globais.png" alt="">
-                
+                    <p>Após fechar o filtro clique no ícone de "mais" para cadastrar um novo usuário</p>
+                    <img class="my-4 img-fluid" src="assets/img/criacao-professor/cadastrar-novo-usuario-totvs.png">
+                    <p>Irá aparecer a tela de cadastro. Conforme a imagem abaixo</p>
+                    <img class="my-4 img-fluid" src="assets/img/criacao-professor/tela-de-cadastro-novo-usuario.png">
+                    <p>No campo <strong>Usuário</strong> digite o nome.sobrenome</p>
+                    <p>No campo <strong>Nome</strong> digite o nome completo do usuário</p>
+                    <p>No campo <strong>E-Mail</strong> digite o e-mail institucional criado no primeiro passo</p>
+                    <p>em <strong>Código de acesso</strong> selecione a opção <em>Default</em></p>
+                    <p>Deixe a opção selecionada <em>Alterar senha no próximo login</em> </p>
+                    <p>No campo Senha digite CPF (Sómente números)</p>
+                    <p>Deixar a opção <strong>Ativo</strong> selecionada</p>
+                    <p>Em <em>Início de Validade</em> <span class="bg-danger text-white p-1">não deixar Sempre é Válido selecionado</span></p>
+                    <p>Sempre deixe a data do último dia do ano seguinte, por exemplo na imagem a data de ínicio está 25/07/2025 então deve-se colocar na <em>Expiração</em> 31/12/2026</p>
+                    <p class="h3 my-4 bg-primary text-white">Vincular o usuário ao cadastro do funcionário:</p>
+                    <p>No Totvs no menu <strong>RH/Folha de pagamento &rarr; Funcionários</strong> pesquise o usuário pelo nome</p>
+                    <p>Clique no usuário pesquisado em <strong>Código de Usuário</strong> insira <strong>nome.sobrenome</strong></p>
+                    <p class="h3 my-4 bg-primary text-white">Atribuir as seguintes Permissões para o usuário:</p>
+                    <p>1 - Educacional &rarr; Gestão Bibliotecária &rarr; Clicar na aba Segurança &rarr; marque a opção 1 FUNDAÇÃO SANTO ANDRÉ e FSA_Portal e clique em Salvar</p>
+                    <P>Clique em Anexo &rarr; Unidade do Usuário Corpore &rarr; Incluir &rarr; FUNDAÇÃO SANTO ANDRÉ &rarr; Biblioteca Comunitária <strong>Marcar Filial Padrão</strong></P>
+                    <p>2 - Educacional &rarr; Educacional &rarr; clique na aba Segurança &rarr; marque a opção 1 FUNDAÇÃO SANTO ANDRÉ &rarr; marque a opção FSA_Prof_S &rarr; Clique am Anexo &rarr; Usuário Filial &rarr; Incluir &rarr; Contexto Graduação &rarr; Permissão para acessar &rarr; Sistema e Portal</p>
+                    <p>3 - RH &rarr; Folha de Pagamento &rarr; clique na aba Segurança &rarr; marque a opção 1 FUNDAÇÃO SANTO ANDRÉ &rarr; marque opção Holerite</p>
+                    <p>4 - RH &rarr; Segurança e Saúde Ocupacional &rarr; marque a opção 1 FUNDAÇÃO SANTO ANDRÉ &rarr; marque opção Comum_V</p>  
                 </div>
-  
-                
+                <!--FIM DA CRIAÇÃO USUÁRIO PROFESSOR-->
+
+
+                <div class="oculta" id="func-n-aluno">
+                    <h1 class="mb-3 p-3 bg-primary text-white">Criação de Acesso Funcionário não Aluno/Aprendiz</h1>
+                    <h2>1 - Criação E-mail institucional</h2>
+                    <p>Para criação do novo usuário é necessário os seguintes dados:</p>
+                    <ul>
+                        <li>Nome</li>
+                        <li>Sobrenome</li>
+                        <li>Nome de usuário [nome.sobrenome]</li>
+                        <li>Senha padrão</li>
+                    </ul>
+                    <p><strong>Habilitar as seguintes configurações</strong></p>
+                    <ul>
+                        <li>Inserir no grupo &rarr; <em>funcionarios@fsa.br</em></li>
+                        <li>Unidade organizacional &rarr; Funcionários </li>
+                        <li>Criar uma senha &rarr; Inserir senha padrão</li>
+                        <li>Habilitar Pedir para que o usuário alterar a senha ao fazer login</li>
+                    </ul>
+                    <p><strong class="bg-danger text-white"> ATENÇÃO</strong></p>
+                    <p>Caso o e-mail principal <strong>nome.sobrenome</strong> esteja em uso, coloque outro sobrenome do usuário.</p>
+                    <p>Caso o usuário já exista na instituição, trata-se de uma reativação de usuário apenas reative a conta do usuário</p>
+
+                    <h3>Vídeo criação de E-mail institucional</h3>
+                    <iframe src="https://www.youtube.com/embed/xjnuN33Rz7o?si=nmeFJojjpX2_GHwZ" title="YouTube video player" title="YouTube video player" allowfullscreen style="width: 100%; height: 400px;">
+                    </iframe>
+
+                    <h2>2 - Criação de usuário no Tovts</h2>
+                    <p>Para incluir novo usuário no Totvs acesse o menu &rarr; Serviços Globais &rarr; Usuários &rarr; Incluir novo</p>
+                    <p><strong>Preencha os campos</strong></p>
+                    <ul>
+                        <li>Código do Usuário &rarr; nome.sobrenome</li>
+                        <li>Nome Completo</li>
+                        <li>E-mail</li>
+                        <li>Código de Acesso &rarr; default</li>
+                        <li>Senha &rarr; CPF (somente números)</li>
+                        <li>Desabilitar a opção <em>Sempre Válido</em></li>
+                        <li>Expiração de validade &rarr; final do ano seguinte</li>
+                        <li>Salvar e Ok</li>
+                    </ul>
+
+                    <h3>Vídeo Criação de Usuário Totvs</h3>
+                    <iframe src="https://www.youtube.com/embed/OQz6v25qwt4?si=d6Z2KjmCxvqtL5uD" title="YouTube video player" title="YouTube video player" allowfullscreen style="width: 100%; height: 400px;">
+                    </iframe>
+
+
+                    <h3>Vincular o usuário ao cadastro do funcionário no RH</h3>
+                    <p><strong>Caminho</strong></p>
+                    <p>Menu &rarr; RA &rarr; Folha de Pagamento &rarr; Funcionários &rarr; Filtrar por nome &rarr; Inserir o código</p>
+                    <h3>Vídeo tutorial vincular o usuário ao cadastro do funcionário</h3>
+                    <iframe src="https://www.youtube.com/embed/6jXJsuFmJjg?si=aVw-yuYLWGFYCOiU" title="YouTube video player" title="YouTube video player" title="YouTube video player" allowfullscreen style="width: 100%; height: 400px;">
+                    </iframe>
+
+                    <p>Preencha o campo <em>Código do Usuário &rarr; <strong>nome.sobrenome</strong> clique Salvar e OK</em></p>
+
+                    <p><strong>Atribuir seguintes permissões</strong></p>
+                    <ul>
+                        <li>BackOffice &rarr; Gestão de estoque Consultar, Alterar, Incluir, Ativar/Tornar Inativo, Cancelar, Reabrir e Imprimir e Salvar</li>
+                        <li>Educacional &rarr; Gestão Bibliotecária &rarr; FSA_Portal &rarr; Anexo/Unidade do Usuário Corpore Biblioteca Comunitária &rarr; Marcar Filial Padrão</li>
+                        <li>RH/Automação de Ponto/Segurança/Comum_A</li>
+                        <li>RH/Folha de Pagamento/Segurança/Holerith</li>
+                        <li>RH/Segurança e Saúde Ocupacional/Comum_V</li>
+                    </ul>
+                    <h3>Vídeo passo a passo Atribuições Totvs Funcionário não Aluno</h3>
+                    <iframe src="https://www.youtube.com/embed/Fm4mNGdy0BE?si=Hxn81iQLfAdAF5DE" title="YouTube video player" title="YouTube video player" title="YouTube video player" allowfullscreen style="width: 100%; height: 400px;">
+                    </iframe>
+
+                    <h2>3 - Criar usuário no Unifsa e Unilab</h2>
+                    <p><strong>Criar o usuário</strong></p>
+                    <ul>
+                        <li>Entre no Servidor Unifsa</li>
+                        <li>Encontre a pasta referente ao setor do novo funcionário</li>
+                        <li>Clique com o botão direito em um usuário com as mesmas permissões que terá o novo funcionário e clique em copiar</li>
+                        <li>Preencha os campos com informações do usuário</li>
+                    </ul>
+                    <p><strong>Preenchar campos</strong></p>
+                    <ul>
+                        <li>Nome e Sobrenome</li>
+                        <li>Nome de logon de usuário &rarr; <strong>nome.sobrenome</strong></li>
+                        <li>Senha &rarr; CPF (somente números)</li>
+                        <li>Habitar opção para o usuário altere a senha no primeiro logon</li>
+                    </ul>
+                    <p><strong>Propriedades do usuário</strong></p>
+                    <ul>
+                        <li>Descrição &rarr; Funcionario(a) - nome do setor</li>
+                        <li>Email &rarr; email institucional</li>
+                    </ul>
+                    
+                    
+                    <h3>Veja o passo a passo para criação no Unifsa</h3>
+                    <iframe src="https://www.youtube.com/embed/vTAN9hBsGj4?si=w0aRqVmMFj-789rO" title="YouTube video player" title="YouTube video player" title="YouTube video player" allowfullscreen style="width: 100%; height: 400px;">
+                    </iframe>
+
+                    <h3>Criação no Servidor Unilab</h3>
+                    <P><strong>Mesmo procedimento para criação no Unifsa com algumas ressalvas</strong></P>
+                    <ul>
+                        <li class="bg-danger text-white"> Não habilitar opção alterar a senha no primeiro logon</li>
+                        <li>Habiliar opção a senha nunca expira</li>
+                    </ul>
+                    <h3>Veja o passo a passo para criação no Unilab</h3>
+                    <iframe src="https://www.youtube.com/embed/itpZaiprVBo?si=U2KhGRW1ntE3vBcZ" title="YouTube video player" title="YouTube video player" title="YouTube video player" allowfullscreen style="width: 100%; height: 400px;">
+                    </iframe>
+
+                    <h3>Sincronizar no E2doc</h3>
+                    <iframe src="https://www.youtube.com/embed/VB6BlyGoV2U?si=jGeKipQ_3FgeD0Dy" title="YouTube video player" title="YouTube video player" title="YouTube video player" allowfullscreen style="width: 100%; height: 400px;">
+                    </iframe>
+
+                    <h2>4 - Enviar e-mail padrão para o usuário</h2>
+
+                    <p>Utilize o modelo pronto do e-mail do suporte e substitua os dados pelo do novo funcionário</p>
+                </div>  
             </div>
         </div>
     </div>
+
+    <div class="container-fluid bg-primary text-white d-flex justify-content-center p-4 mt-4">
+        <p>suporte@fsa.br</p>
+    </div>
+
+    
 
     <a class="topo bg-primary" href="#topo"><img src="assets/icon/arrow-up-short.svg" alt="" width="30px"></a>
 
